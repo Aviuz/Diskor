@@ -6,9 +6,19 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 		<PackAsTool>true</PackAsTool>
-		<Version>1.0.0</Version>
+		<Version>1.0.1</Version>
 		<ToolCommandName>diskor</ToolCommandName>
 	</PropertyGroup>
+
+	<PropertyGroup>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Include="LICENSE" PackagePath="." Pack="true" />
+	  <None Include="README.md" PackagePath="." Pack="true" />
+	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="ECF" Version="1.0.6" />
